@@ -1,0 +1,41 @@
+.magnets {
+	position: absolute;
+	// outline: 2px solid purple;
+}
+// .magnets.hidden {
+// 	visibility: hidden;
+// }
+.magnetUp-0 {
+	width: 51px;
+	height: 207px;
+	left: 750px;
+	top: 150px;
+}
+.magnetUp-1 {
+	width: 51px;
+	height: 207px;
+	left: 750px;
+	top: 150px;
+	// visibility: hidden;
+}
+// .magnetUp-1.active {
+// 	visibility: visible;
+// }
+.magnetLo-0 {
+	width: 168px;
+    height: 202px;
+	left: 690px;
+	top: 400px;
+}
+.magnetLo-1 {
+	width: 168px;
+    height: 202px;
+	left: 690px;
+	top: 400px;
+	display: none;
+	// visibility:hidden;
+}
+// .magnetLo-1.active {
+// 	visibility: visible;
+// }
+

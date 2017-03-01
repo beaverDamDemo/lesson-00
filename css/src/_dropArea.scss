@@ -1,0 +1,160 @@
+$offsetLeft: 60px;
+$offsetTop: 150px;
+
+.curTarget {
+    box-shadow: 0 0 6px 2px navy;
+}
+.innerDropAreas {
+	position: absolute;
+	// box-shadow: 0px 0px 5px 1px darkorange;
+	// visibility: hidden;
+}
+.innerDropAreas.correct {
+    box-shadow: 0 0 25px 2px mediumBlue;
+}
+.innerDropAreas.wrong {
+    box-shadow: 0 0 25px 2px red;
+}
+#ida0 {
+	left: $offsetLeft + 198px;
+    top: 125px + $offsetTop;
+	width: 70px;
+	height: 250px;
+	// up 180
+}
+
+#ida1 {
+    left: $offsetLeft + 194px;
+    top: 135px + $offsetTop;
+    width: 70px;
+    height: 208px;
+	// pu 0
+}
+#ida2 {
+    left: $offsetLeft + 117px;
+    top: 210px + $offsetTop;
+    width: 215px;
+    height: 70px;
+	// up 90
+}
+#ida3 {
+    left: $offsetLeft + 127px;
+    top: 202px + $offsetTop;
+    width: 213px;
+    height: 70px;
+	// up 270
+}
+#ida4 {
+    left: $offsetLeft + 88px;
+    top: 130px + $offsetTop;
+    width: 240px;
+    height: 207px;
+	// low 90
+}
+#ida5 {
+    left: $offsetLeft + 260px;
+    top: 140px + $offsetTop;
+    width: 240px;
+    height: 207px;
+	// low 270
+}
+#ida6 {
+    left: $offsetLeft + 114px;
+    top: 200px + $offsetTop;
+    width: 207px;
+    height: 240px;
+	// low 180
+}
+#ida7 {
+    left: $offsetLeft + 200px;
+    top: 43px + $offsetTop;
+    width: 207px;
+    height: 240px;
+	// low 0
+}
+#ida8left {
+    left: $offsetLeft + 24px;
+    top: 178px + $offsetTop;
+    width: 210px;
+    height: 70px;
+	// up double
+}
+#ida8right {
+    left: $offsetLeft + 314px;
+    top: 178px + $offsetTop;
+    width: 210px;
+    height: 70px;
+	// up double
+}
+#ida9left { 
+	left: $offsetLeft + 8px;
+    top: 200px + $offsetTop;
+    width: 210px;
+    height: 70px;
+	// up double
+}
+#ida9right {
+	left: $offsetLeft + 282px;
+    top: 198px + $offsetTop;
+    width: 210px;
+    height: 70px;
+	// up double
+}
+#ida10 {
+    left: $offsetLeft + 110px;
+    top: 190px + $offsetTop;
+	width: 250px;
+	height: 70px;
+	// up 270;
+}
+#ida11 {
+    left: $offsetLeft + 120px;
+    top: 230px + $offsetTop;
+	width: 250px;
+	height: 70px;
+	// up 90
+}
+#ida12 {
+    left: $offsetLeft + 190px;
+    top: 120px + $offsetTop;
+	width: 70px;
+	height: 250px;
+	// up 0
+}
+#ida13 {
+    left: $offsetLeft + 206px;
+    top: 118px + $offsetTop;
+	width: 70px;
+	height: 250px;
+	// up 180
+}
+#ida14 {
+    left: $offsetLeft + 120px;
+    top: 140px + $offsetTop;
+    width: 300px;
+    height: 207px;
+	// low 90
+}
+#ida15 {
+    left: $offsetLeft + 60px;
+    top: 126px + $offsetTop;
+    width: 310px;
+    height: 207px;
+	// low 270
+}
+#ida16 {
+    left: $offsetLeft + 147px;
+    top: 90px + $offsetTop;
+    width: 200px;
+    height: 290px;
+	// wtf..
+	// magnet je inverted
+}
+#ida17 {
+    left: $offsetLeft + 130px;
+    top: 120px + $offsetTop;
+    width: 207px;
+    height: 320px;
+	// low 0
+}
+

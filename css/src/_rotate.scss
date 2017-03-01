@@ -1,0 +1,171 @@
+.rotate-wrapper-up0 {
+	transform: rotate(0deg);
+	width: 51px;
+	height: 208px;
+}
+.rotate-wrapper-up0.rotate-0:after, .rotate-wrapper-up0.rotate-0:before {
+	transform: rotate(-0deg);
+}
+
+.rotate-wrapper-up0.rotate-180:after, .rotate-wrapper-up0.rotate-180:before {
+	transform: rotate(-180deg);
+}
+
+.rotate-wrapper-up0.rotate-90:after, .rotate-wrapper-up0.rotate-90:before {
+	transform: rotate(270deg);
+}
+.rotate-wrapper-up0.rotate-270:after, .rotate-wrapper-up0.rotate-270:before  {
+	transform: rotate(90deg);
+}
+
+.rotate-wrapper-up0:after {
+	content: '';
+	background-image: url('../images/N.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.rotate-wrapper-up0::before {
+	content: '';
+	background-image: url('../images/S.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+}
+
+.rotate-wrapper-up1 {
+	transform: rotate(0deg);
+	width: 51px;
+	height: 208px;
+}
+.rotate-wrapper-up1.rotate-0:after, .rotate-wrapper-up1.rotate-0:before {
+	transform: rotate(-0deg);
+}
+.rotate-wrapper-up1.rotate-180:after, .rotate-wrapper-up1.rotate-180:before {
+	transform: rotate(-180deg);
+}
+.rotate-wrapper-up1.rotate-90:after, .rotate-wrapper-up1.rotate-90:before {
+	transform: rotate(270deg);
+}
+.rotate-wrapper-up1.rotate-270:after, .rotate-wrapper-up1.rotate-270:before  {
+	transform: rotate(90deg);
+}
+
+.rotate-wrapper-up1:after {
+	content: '';
+	background-image: url('../images/N.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.rotate-wrapper-up1::before {
+	content: '';
+	background-image: url('../images/S.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+}
+
+
+.rotate-wrapper-lo0 {
+	transform: rotate(0deg);
+	width: 168px;
+	height: 202px;
+	// transition: transform 0.25s ease-in;
+}
+.rotate-wrapper-lo0.rotate-0:after, .rotate-wrapper-lo0.rotate-0:before {
+	transform: rotate(-0deg);
+}
+.rotate-wrapper-lo0.rotate-180:after, .rotate-wrapper-lo0.rotate-180:before {
+	transform: rotate(180deg);
+}
+.rotate-wrapper-lo0.rotate-90:after, .rotate-wrapper-lo0.rotate-90:before {
+	transform: rotate(270deg);	
+}
+.rotate-wrapper-lo0.rotate-270:after, .rotate-wrapper-lo0.rotate-270:before {
+	transform: rotate(90deg);	
+}
+
+.rotate-wrapper-lo0::after {
+	content: '';
+	background-image: url('../images/N.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 161px;
+	left: 131px;
+}
+.rotate-wrapper-lo0::before {
+	content: '';
+	background-image: url('../images/S.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 161px;
+	left: 8px;
+}
+
+
+.rotate-wrapper-lo1 {
+	transform: rotate(0deg);
+	width: 168px;
+	height: 202px;
+	// transition: transform 0.25s ease-in;
+}
+.rotate-wrapper-lo1.rotate-0:after, .rotate-wrapper-lo1.rotate-0:before {
+	transform: rotate(-0deg);
+}
+.rotate-wrapper-lo1.rotate-180:after, .rotate-wrapper-lo1.rotate-180:before {
+	transform: rotate(180deg);
+}
+.rotate-wrapper-lo1.rotate-90:after, .rotate-wrapper-lo1.rotate-90:before {
+	transform: rotate(270deg);	
+}
+.rotate-wrapper-lo1.rotate-270:after, .rotate-wrapper-lo1.rotate-270:before {
+	transform: rotate(90deg);	
+}
+
+.rotate-wrapper-lo1::after {
+	content: '';
+	background-image: url('../images/N.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 161px;
+	left: 131px;
+}
+.rotate-wrapper-lo1::before {
+	content: '';
+	background-image: url('../images/S.svg');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 161px;
+	left: 8px;
+}

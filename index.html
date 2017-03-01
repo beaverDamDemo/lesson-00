@@ -1,0 +1,90 @@
+<!doctype html>
+  <html lang="sl">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title data-i18n="[html]title"></title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <link rel="stylesheet" href="css/styles.min.css" />
+
+    </head>
+  
+    <body>
+      
+      <div class="wrapper">
+        <!-- <img src="images/temporary.png" alt="" style='opacity: 0.2'> -->
+
+        <div id="steps-wrapper">
+          <div class="steps active" id="step-1">
+            <div class="backgroundImage" id="back-1"></div>
+          </div>
+
+          <div class="steps" id="step-2">
+            <div class="backgroundImage" id="back-2"></div>
+          </div>
+
+          <div class="steps" id="step-3">
+            <div class="backgroundImage" id="back-3"></div>
+          </div>
+
+          <div class="steps" id="step-4">
+            <div class="backgroundImage" id="back-4"></div>
+          </div>
+
+          <div class="steps" id="step-5">
+            <div class="backgroundImage" id="back-5"></div>
+          </div>
+        </div>  <!-- steps-wrapper -->
+
+
+        <div class="stepper-wrapper ">
+          <div class="stepper">
+            <div class="stepper-icon backward"></div>
+            
+            <div class="stepper-text-wrapper">
+              <div class="stepper-text">
+                <p>
+                  <span class="steps-current">1</span>
+                  <span class="steps-slash">|</span>
+                  <span class="steps-total">1</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="stepper-icon forward"></div>
+          </div> 
+        </div>
+        <!-- stepper-wrapper -->
+
+        <div id='invisibleWrapper'></div>
+
+ <!--        <div id="note" style="position: absolute; top: 20px; left: 300px; background: black; color: white; padding: 30px;">
+          <p>  sploh ni gumba; ta se pojavi šele ko magnet odložim na sliko </p>
+        </div> -->
+
+      </div>
+      <!-- wrapper -->
+
+
+
+
+      <script src="../assets/jquery/jquery.js"></script>
+      
+      <!-- fastclick -->
+      <script src="../assets/fastclick/fastclick.min.js"></script>
+
+      <script src="../assets/i18next/i18next.js"></script>
+      <script src="../assets/js/localisation.js"></script>
+      
+      <!-- DRAGGABLE LIB -->
+      <script src="../assets/greensock/TweenMax.min.js"></script>
+      <script src="../assets/greensock/utils/Draggable.min.js"></script>
+
+
+      
+      <!-- PRODUCTION SCRIPT -->
+      <script src="js/bundle.min.js"></script> 
+      
+    </body>
+  </html>

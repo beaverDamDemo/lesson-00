@@ -1,0 +1,91 @@
+.rotateButton {
+	position: absolute;
+	width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #00b3ff;
+    transition: background 0.3s;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 48px;
+    text-indent: 3px;
+	background-image: url('../images/basementButtons.png');
+	background-position: -68px 12px;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    filter: FlipH;
+    display: block;
+
+    &:hover {
+    	background-color: #007eb2;
+    }
+    &.disabled {
+    	pointer-events: none !important;
+	    background-repeat: no-repeat;
+    	background-color: #323232;
+    	background-color: #666; 
+        visibility: hidden;
+        display: none;
+    }
+}
+.rotateButtonUpper-0 {
+	left: 930px;
+	top: 240px;
+}
+.rotateButtonLower-0 {
+	left: 930px;
+    top: 520px;
+}
+.rotateButtonUpper-1 {
+    left: 930px;
+    top: 240px;
+    // visibility: hidden;
+    // background-color: orange;
+}
+.rotateButtonLower-1 {
+    left: 930px;
+    top: 520px;
+    // visibility: hidden;
+    background-color: orange;
+    display: none;
+}
+.rotateButtonUpper-1.active {
+    visibility: visible;
+}
+.rotateButtonLower-1.active {
+    visibility: visible;
+}
+
+
+.checkButton {
+	position: absolute;
+	z-index: 4;
+    left: 606px;
+    bottom: 40px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #00b3ff;
+    transition: background 0.3s;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 48px;
+    text-indent: 3px;
+	background-image: url('../images/basementButtons.png');
+	background-position: 11px 12px;
+    background-repeat: no-repeat;
+
+    &:hover {
+    	background-color: #007eb2;
+    }
+    &.disabled {
+    	pointer-events: none;
+	    background-repeat: no-repeat;
+    	background-color: #323232;
+    	background-color: #666; 
+    }
+}

@@ -1,0 +1,73 @@
+.spinner {
+    height: 48px;
+    width: 128px;
+    border-radius: 24px;
+    border: 2px solid #00b3ff;
+    position: absolute;
+    top: 680px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.spinner .left-arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    font-family: 'iRokusPlusIcons';
+    font-size: 22px;
+    color: #00b3ff;
+    text-align: center;
+    line-height: 44px;
+    -webkit-transition: color 0.3s, opacity 0.3s;
+    transition: color 0.3s, opacity 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 1;
+    left: 0;
+}
+.spinner .current {
+    position: absolute;
+    height: 44px;
+    width: 50%;
+    color: #00b3ff;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 44px;
+    left: 0;
+    text-align: right;
+}
+.spinner .total {
+    position: absolute;
+    height: 44px;
+    width: 50%;
+    color: #00b3ff;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 44px;
+    left: -webkit-calc(50% + 1px);
+    left: calc(50% + 1px);
+}
+.spinner .right-arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    font-family: 'iRokusPlusIcons';
+    font-size: 22px;
+    color: #00b3ff;
+    text-align: center;
+    line-height: 44px;
+    -webkit-transition: color 0.3s, opacity 0.3s;
+    transition: color 0.3s, opacity 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 1;
+    right: 0;
+}
+.spinner .current:after {
+    content: '|';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    top: -1px;
+}

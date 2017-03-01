@@ -1,0 +1,104 @@
+$step-width: 1024px;
+
+#steps-wrapper {
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	// transition: transform 0.35s;
+}
+.steps {
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+#step-1.active {
+	visibility: visible;
+}
+#step-2.active {
+	visibility: visible;
+}
+#step-3.active {
+	visibility: visible;
+}
+#step-4.active {
+	visibility: visible;
+}
+#step-5.active {
+	visibility: visible;
+}
+
+.backgroundImage {
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 1024px;
+	height: 768px;
+}
+
+
+
+
+
+
+
+// this bottom part is for horizontal steps
+// $step-width: 1024px;
+
+// #steps-wrapper {
+// 	width: 6144px;
+// 	height: 768px;
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// 	transition: transform 0.35s;
+// }
+// #steps-wrapper.step-1 {
+// 	transform: translateX(-0 *  $step-width);
+// }
+// #steps-wrapper.step-2 {
+// 	transform: translateX(-1 * $step-width);
+// }
+// #steps-wrapper.step-3 {
+// 	transform: translateX(-2 * $step-width);
+// }
+// #steps-wrapper.step-4 {
+// 	transform: translateX(-3 * $step-width);
+// }
+// #steps-wrapper.step-5 {
+// 	transform: translateX(-4 * $step-width);
+// }
+
+// .steps {
+// 	width: 1024px;
+// 	height: 768px;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// }
+// #step-1 {
+// 	left: 0 * $step-width;
+// }
+// #step-2 {
+// 	left: 1 * $step-width;
+// }
+// #step-3 {
+// 	left: 2 * $step-width;
+// }
+// #step-4 {
+// 	left: 3 * $step-width;
+// }
+// #step-5 {
+// 	left: 4 * $step-width;
+// }
+// .backgroundImage {
+// 	position: absolute;
+// 	left:0;
+// 	top: 0;
+// 	width: 1024px;
+// 	height: 768px;
+// }
