@@ -8,18 +8,11 @@
 		[ "fieldLines2.jpg", [ [ "magnetUp", 270 ] ], [ "ida2" ] ],
 		[ "fieldLines3.jpg", [ [ "magnetUp", 90 ] ], [ "ida3" ] ],
 		[ "fieldLines4.jpg", [ [ "magnetLo", 270 ] ], [ "ida4" ] ],
-		[ "fieldLines8.jpg", [ [ "magnetUp", 270 ], [ "magnetUp", 90 ] ], [ "ida8left", "ida8right" ] ],
-		[ "fieldLines9.jpg", [ [ "magnetUp", 270 ], [ "magnetUp", 270 ] ], [ "ida9left", "ida9right" ] ]
-
-		
-	],
-
-	"temporarlyDisabled" : 
-	[
-
 		[ "fieldLines5.jpg", [ [ "magnetLo", 90 ] ], [ "ida5" ] ],
 		[ "fieldLines6.jpg", [ [ "magnetLo", 180 ] ], [ "ida6" ] ],
 		[ "fieldLines7.jpg", [ [ "magnetLo", 0 ] ], [ "ida7" ] ],		
+		[ "fieldLines8.jpg", [ [ "magnetUp", 270 ], [ "magnetUp", 90 ] ], [ "ida8left", "ida8right" ] ],
+		[ "fieldLines9.jpg", [ [ "magnetUp", 270 ], [ "magnetUp", 270 ] ], [ "ida9left", "ida9right" ] ]
 		[ "fieldLines10.jpg", [ [ "magnetUp", 90 ] ], [ "ida10" ] ],
 		[ "fieldLines11.jpg", [ [ "magnetUp", 270 ] ], [ "ida11" ] ],
 		[ "fieldLines12.jpg", [ [ "magnetUp", 0 ] ], [ "ida12" ] ],
@@ -28,6 +21,14 @@
 		[ "fieldLines15.jpg", [ [ "magnetLo", 90 ] ], [ "ida15" ] ],
 		[ "fieldLines16.jpg", [ [ "magnetLo", 180 ] ], [ "ida16" ] ],
 		[ "fieldLines17.jpg", [ [ "magnetLo", 0 ] ], [ "ida17" ] ]
+		
+	],
+
+	"temporarlyDisabled" : 
+	[
+
+		
+
 	]
 
 }

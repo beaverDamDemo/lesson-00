@@ -2,13 +2,10 @@
 
   'use strict';
 
-  $(document).one('i18nComplete', init);
   let $stepsWrapper = $('#steps-wrapper');
 
   let currentStep = 1;
-  Stepper.setMaxSteps(5);
 
-  $(Stepper).on('stepperClicked', stepperHandler);  
   var $body = $('body');
   $body.addClass('loading');
 
@@ -20,12 +17,39 @@
   var ourDrags;
   var ourDragsArray = [];
   var dropAreas = [];
-  var tempE = []; 
+  var tempE = [];
+
+  var items = 
+  [
+    [ "fieldLines0.png", [ [ "magnetUp", 180 ] ], [ "ida0" ] ],
+    [ "fieldLines1.png", [ [ "magnetUp", 0 ] ], [ "ida1" ] ],
+    [ "fieldLines2.png", [ [ "magnetUp", 270 ] ], [ "ida2" ] ],
+    [ "fieldLines3.png", [ [ "magnetUp", 90 ] ], [ "ida3" ] ],
+    [ "fieldLines4.png", [ [ "magnetLo", 270 ] ], [ "ida4" ] ],
+    [ "fieldLines5.png", [ [ "magnetLo", 90 ] ], [ "ida5" ] ],
+    [ "fieldLines6.png", [ [ "magnetLo", 180 ] ], [ "ida6" ] ],
+    [ "fieldLines7.png", [ [ "magnetLo", 0 ] ], [ "ida7" ] ],   
+    [ "fieldLines8.png", [ [ "magnetUp", 270 ], [ "magnetUp", 90 ] ], [ "ida8left", "ida8right" ] ],
+    [ "fieldLines9.png", [ [ "magnetUp", 270 ], [ "magnetUp", 270 ] ], [ "ida9left", "ida9right" ] ]
+    [ "fieldLines10.png", [ [ "magnetUp", 90 ] ], [ "ida10" ] ],
+    [ "fieldLines11.png", [ [ "magnetUp", 270 ] ], [ "ida11" ] ],
+    [ "fieldLines12.png", [ [ "magnetUp", 0 ] ], [ "ida12" ] ],
+    [ "fieldLines13.png", [ [ "magnetUp", 180 ] ], [ "ida13" ] ],
+    [ "fieldLines14.png", [ [ "magnetLo", 270 ] ], [ "ida14" ] ],
+    [ "fieldLines15.png", [ [ "magnetLo", 90 ] ], [ "ida15" ] ],
+    [ "fieldLines16.png", [ [ "magnetLo", 180 ] ], [ "ida16" ] ],
+    [ "fieldLines17.png", [ [ "magnetLo", 0 ] ], [ "ida17" ] ]
+    
+  ];
+
+  init(); 
+
+
 
   function init(e) {
-    FastClick.attach(document.body);
-    items = i18n.t('items', { returnObjectTrees: true});
-    ShuffleArray(items);
+
+    console.log('inside init')
+    // ShuffleArray(items);
     loadSteps();
     loadTargets();
     $('.innerDropAreas').css('border', '2px solid brown');
@@ -254,7 +278,7 @@
             }
           }
           else {
-            // console.log("hitTest FAILED ln 225");
+            // console.log("hitTest FAILED");
             if( !$('#'+dropAreas[_step-1][i]).hasClass('solved')) { 
               $('#'+dropAreas[_step-1][i]).removeClass("correct solved");
               $('#'+dropAreas[_step-1][i]).addClass('wrong');
@@ -480,18 +504,15 @@
     }, 1000);
   }
 
-  function stepperHandler (e, data) {
-    if(data.direction === 'back') 
-    {      
-      currentStep--;
-    }
-    else 
-    {
+  $(nextButton).on('click', function() {
       currentStep++;
-    }
-    Stepper.setCurrentStep(currentStep);
+     _handleStep(currentStep);
+  });
+  $(backButton).on('click', function() {
+    currentStep--;
     _handleStep(currentStep);
-  };
+  });
+
 
   function _handleStep(id) {
     $('.steps').removeClass("active");
