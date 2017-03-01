@@ -9,7 +9,6 @@
   var $body = $('body');
   $body.addClass('loading');
 
-  var items = [];
   var checkClickCount = 0
   var angle = 0;
   var droppables;
@@ -18,8 +17,8 @@
   var ourDragsArray = [];
   var dropAreas = [];
   var tempE = [];
-
-  var items = 
+  var items; 
+  var fields = 
   [
     [ "fieldLines0.png", [ [ "magnetUp", 180 ] ], [ "ida0" ] ],
     [ "fieldLines1.png", [ [ "magnetUp", 0 ] ], [ "ida1" ] ],
@@ -30,7 +29,7 @@
     [ "fieldLines6.png", [ [ "magnetLo", 180 ] ], [ "ida6" ] ],
     [ "fieldLines7.png", [ [ "magnetLo", 0 ] ], [ "ida7" ] ],   
     [ "fieldLines8.png", [ [ "magnetUp", 270 ], [ "magnetUp", 90 ] ], [ "ida8left", "ida8right" ] ],
-    [ "fieldLines9.png", [ [ "magnetUp", 270 ], [ "magnetUp", 270 ] ], [ "ida9left", "ida9right" ] ]
+    [ "fieldLines9.png", [ [ "magnetUp", 270 ], [ "magnetUp", 270 ] ], [ "ida9left", "ida9right" ] ],
     [ "fieldLines10.png", [ [ "magnetUp", 90 ] ], [ "ida10" ] ],
     [ "fieldLines11.png", [ [ "magnetUp", 270 ] ], [ "ida11" ] ],
     [ "fieldLines12.png", [ [ "magnetUp", 0 ] ], [ "ida12" ] ],
@@ -50,6 +49,9 @@
 
     console.log('inside init')
     // ShuffleArray(items);
+    items = shuffle(fields);
+    console.log('items length: ', items.length)
+    console.log(items)
     loadSteps();
     loadTargets();
     $('.innerDropAreas').css('border', '2px solid brown');
@@ -82,7 +84,7 @@
       $('#step-'+(l+1)).append(_sum);
       _temp0 = "<div class='magnets hidden magnetLo-1 rot0' id='magnet-"+(l+1)+"-3'>";
       _temp1 = "<div class='rotate-wrapper-lo1 rotate-0'>";
-      _temp2 = "<img src='images/magnet2.png' alt=''>";
+      _temp2 = "<img src='images/magnet2.jpg' alt=''>";
       _temp3 = "</div></div>";
       _sum = _temp0 + _temp1 + _temp2 + _temp3;
       $('#step-'+(l+1)).append(_sum);
@@ -523,7 +525,24 @@
 
 })();
 
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
 
 
 
