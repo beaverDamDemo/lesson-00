@@ -38,7 +38,6 @@
     [ "fieldLines15.png", [ [ "magnetLo", 90 ] ], [ "ida15" ] ],
     [ "fieldLines16.png", [ [ "magnetLo", 180 ] ], [ "ida16" ] ],
     [ "fieldLines17.png", [ [ "magnetLo", 0 ] ], [ "ida17" ] ]
-    
   ];
 
   init(); 
@@ -46,12 +45,7 @@
 
 
   function init(e) {
-
-    console.log('inside init')
-    // ShuffleArray(items);
     items = shuffle(fields);
-    console.log('items length: ', items.length)
-    console.log(items)
     loadSteps();
     loadTargets();
     $('.innerDropAreas').css('border', '2px solid brown');
@@ -183,7 +177,6 @@
           unhideCopyOfDraggedMagnet(_draggedMagnet);
           // if ( this is magnet nevemkaj ends with 2 or 3  then hide upper rotate button, to je button ending with -0 
           // and put class active to buttons ending with -1     
-          // console.log("magnet moved. x: ", this.x-this.startX, 'y: ', this.y-this.startY);
           let _magnetEnding = this.target.id.substr(this.target.id.length-1);
           let cristaccio = this.target.id.substr(0, this.target.id.length-1);
           // console.log("cristaccio: ", cristaccio, ' step je: ', _step);
@@ -439,7 +432,6 @@
       if( _rotation == _corrRot) {
         _msg+='All GOOD. returning CORRECT and disabling magnet click. ';
         // here we ll disable this magnet, it ll be sooner 
-        console.log('putting pointer events none to a magnet...')
         // _tar.css({'pointer-events': 'none'});
         // console.log(_msg);
         return 'correct'; 
@@ -507,22 +499,28 @@
   }
 
   $(nextButton).on('click', function() {
-      currentStep++;
-     _handleStep(currentStep);
+     console.log(' currentstep before change: ' , currentStep)
+      if( currentStep < 5) {
+        currentStep++;
+        console.log("New currentStep: ", currentStep);
+       _handleStep(currentStep);        
+      }
   });
   $(backButton).on('click', function() {
-    currentStep--;
-    _handleStep(currentStep);
+    console.log(' currentstep before change: ' , currentStep)
+    if( currentStep > 1) {
+        currentStep--;
+        console.log("New currentStep: ", currentStep);
+      _handleStep(currentStep);  
+    }
   });
 
 
   function _handleStep(id) {
     $('.steps').removeClass("active");
-    $('#step-'+id).addClass('active');
+    $('#step-'+id).addClass('active');      
     checkClickCount = 0;
   }
-
-
 })();
 
 function shuffle(array) {

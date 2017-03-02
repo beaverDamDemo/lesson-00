@@ -106,11 +106,17 @@
 #backButton {
     top: 700px;
     left: 412px;
-    background: firebrick;
-    
+    background-color: firebrick;
+    background-image: url('../images/right-128.png');
+    background-size: 55px 50px;
+    background-position: 0px 0;
+    transform: scale(-1);
 }   
 #nextButton {
     top: 700px;
     left: 562px;  
-    background: green;
+    background-color: green;
+    background-image: url('../images/right-128.png');
+    background-size: 55px 50px;
+
 }
