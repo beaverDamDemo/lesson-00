@@ -42,8 +42,6 @@
 
   init(); 
 
-
-
   function init(e) {
     items = shuffle(fields);
     loadSteps();
@@ -134,8 +132,6 @@
           droppables.startX = this.x;
           droppables.startY = this.y;          
         }
-
-
         // ko je drugi magnet kliknjen se pac po potrebi doda class solved na .. droparea od prejsnjega magnetka
         let pluricagato = false;
         for( var i=0; i<dropAreas[_step-1].length; i++) { 
@@ -227,12 +223,6 @@
             let _corrRot = $('#'+dropAreas[_step-1][i]).attr('data-target-rotate');
             // let _corrRot = $('#step-'+_step+' .innerDropAreas').attr('data-target-rotate');
 
-            // console.log("$('#step-'+_step+' .innerDropAreas')", $('#step-'+_step+' .innerDropAreas'));
-            // console.log("$('#step-'+_step+' .innerDropAreas').attr('data-target-rotate')", $('#step-'+_step+' .innerDropAreas').attr('data-target-rotate'));
-            // tale corr rot je napacen. 
-            // console.log('corr rot: ', _corrRot, 'corr magnet: ', _corrMag);
-
-            // console.log('removing class wrong');
             $('#'+dropAreas[_step-1][i]).removeClass('wrong');
             var _res = checkDrop($(this.target),  _corrMag, _corrRot);
             // console.log("adding classs ", _res);
@@ -241,35 +231,6 @@
               // $(note).append('CORRECT');
               // console.log("adding class correct");
               // $('#'+dropAreas[_step-1][i]).addClass('solved');
-
-
-              if(false) {
-                // var ma = _draggedMagnet.attr('id');
-                // var mStep = ma.slice(ma.length-3, ma.length-2);
-                // var mc = ma.slice(ma.length-1, ma.length);
-                // if( mc == 0 ) {
-                //   var md = $('#rotateButton-'+mStep+'-0');
-                //   md.addClass("disabled");
-                //   // $('#rotateButton-'+mStep+'-2').removeClass('disabled');
-                // }
-                // else if( mc == 1 ) {
-                //   var md = $('#rotateButton-'+mStep+'-1');
-                //   md.addClass("disabled");
-                //                   // $('#rotateButton-'+mStep+'-3').removeClass('disabled');
-                // }              
-                // else if( mc == 2 ) {
-                //   var md = $('#rotateButton-'+mStep+'-2');
-                //   md.addClass("disabled");
-
-                // }
-                // else if( mc == 3 ) {
-                //   var md = $('#rotateButton-'+mStep+'-3');
-                //   md.addClass("disabled");
-                // }              
-                // else {
-                //   console.log("something went wrong");
-                // }
-              }
             }
           }
           else {
@@ -278,10 +239,6 @@
               $('#'+dropAreas[_step-1][i]).removeClass("correct solved");
               $('#'+dropAreas[_step-1][i]).addClass('wrong');
             }  
-            // if( true) { 
-            //   $('#'+dropAreas[_step-1][i]).removeClass("correct solved");
-            //   $('#'+dropAreas[_step-1][i]).addClass('wrong');
-            //  }
           }
         }//for
       } //onDragEnd
@@ -463,18 +420,6 @@
     // enableSecondRotateButton(_n, _m);
 
   }
-
-  // function enableSecondRotateButton(u, s) {
-  //   let _u = u.slice(u.length-1)-2;
-  //   if(_u == 0) {
-  //     $('#rotateButton-'+s+'-'+2).removeClass('disabled');  
-  //     console.log('removing disabled to rotatebutton..-2');
-  //   }
-  //   else if(_u == 1) {
-  //     $('#rotateButton-'+s+'-'+3).removeClass('disabled');        
-  //     console.log('removing disabled to rotatebutton..-3');      
-  //   }
-  // }
 
   function disablePlay() {
     $('#step-'+currentStep).find('.magnets').css({ 'pointer-events': 'none'});

@@ -1,17 +1,13 @@
 html, body {
 	margin: 0;
 	padding: 0;
+    user-select: none;
 }
-html, body {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
-}
+
 .wrapper {
 	background-color: #fff;
-	width: 1024px;
-	height: 768px;
+	width: 1000px;
+	height: 750px;
 	position: absolute;
 	left: 50%;
 	top: 0;
@@ -28,25 +24,6 @@ html, body {
 	left: 0;
 	top: 0;
 	z-index: -1;
-}
-
-.annotation-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1024px;
-	height: 100px;
-}
-.annotation-content {
-	padding: 28px 40px 0 40px;
-}
-// .annotation-content p:first-child {
-// 	font-weight: bold;
-// 	padding-right: 5px;
-// }
-.annotation-content p {
-	color: #000;
-	display: inline;
 }
 
 #tempBut {
